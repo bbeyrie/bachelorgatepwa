@@ -1,7 +1,7 @@
 # 💘 HeartSwipe: Solo's Quest 💘
 
 Find your perfect virtual partner 👩‍❤️‍💋‍👨
-![HeartSwipe](./Static/Images/imagine-an-icon-heart-shaped-for-an-application-li-top.png)
+![HeartSwipe](./static/images/imagine-an-icon-heart-shaped-for-an-application-li-top.png)
 
 ## Licenses
 
