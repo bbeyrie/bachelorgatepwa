@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+
+</head>
+
+<body>
+
+  <div class="swiper">
+
+    <!-- Slides générés dynamiquement -->
+    {% for profile in profiles %}
+
+    <div class="slide">
+
+      {% for image in profile.images %}
+        <img src="{{image}}"> 
+      {% endfor %}
+
+      <h3>{{ profile.name }}</h3>
+
+      <div class="profile-info">
+        {% for key, value in profile.iteritems() %}
+          <p>{{ key }}: {{ value }}</p>
+        {% endfor %}  
+      </div>
+
+    </div>
+
+    {% endfor %}
+    
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Paramètres Swiper
+      slidesPerView: 1,
+      spaceBetween: 30, 
+      loop: true,
+
+      // Navigation
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      } 
+    });
+  </script>
+
+</body>
+
+</html>
