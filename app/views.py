@@ -48,14 +48,20 @@ def get_next_profile(profile_id: str):
   return get_profile(next_profile)
 
 
-@router.post("/swipe")
-def swipe(request: Request):
+@router.post("/profiles/{profile_id}/{profile_match_id}/swipe")
+def swipe(request: Request,
+          profile_id: str,
+          profile_match_id: str):
 
   direction = request.form.get("direction")
 
   if direction == "right":
     
     next_profile = get_next_profile()
+
+    for profile in PROFILES:
+      if profile.get("uuid")==profile_id:
+        profile.get('match').append(profile_match_id)
 
     return {
       "match": True,
@@ -65,6 +71,10 @@ def swipe(request: Request):
   elif direction == "left":
 
     next_profile = get_next_profile()
+
+    for profile in PROFILES:
+      if profile.get("uuid")==profile_id:
+        profile.get('nomatch').append(profile_match_id)
 
     return {
       "match": False,
