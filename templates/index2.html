@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="{{ 'data/images/Benjamin_32/photo_0.png' }}"></div>
+      <div class="swiper-slide"><img src="{{ 'data/images/Benjamin_32/photo_1.png' }}"></div>
+      <div class="swiper-slide"><img src="{{ 'data/images/Benjamin_32/photo_2.png' }}"></div>
+      <div class="swiper-slide"><img src="{{ 'data/images/Benjamin_32/photo_3.png' }}"></div>
+    </div>
+    <!-- Boutons de navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    // Attendre que le DOM soit prêt
+    document.addEventListener('DOMContentLoaded', () => {
+      const swiper = new Swiper('.swiper-container', {
+        // Paramètres Swiper
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+        // Navigation
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

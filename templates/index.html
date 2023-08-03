@@ -3,7 +3,7 @@
 <head>
 
   <!-- Swiper CSS -->
-  <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 </head>
 
@@ -13,44 +13,56 @@
 
     <!-- Slides générés dynamiquement -->
     {% for profile in profiles %}
-
+  
+    {% set image_folder = profile.nom + '_' + profile.age|string %}
+  
     <div class="slide">
-
-      {% for image in profile.images %}
-        <img src="{{image}}"> 
+  
+      {% for i in range(4) %}
+  
+        <img src="{{ 'data/images/' + image_folder + '/photo_' + i|string + '.png' }}">
+  
       {% endfor %}
-
+  
       <h3>{{ profile.name }}</h3>
-
+  
       <div class="profile-info">
-        {% for key, value in profile.iteritems() %}
+        {% for key, value in profile.items() %}
           <p>{{ key }}: {{ value }}</p>
-        {% endfor %}  
+        {% endfor %}
       </div>
-
+  
     </div>
-
+  
     {% endfor %}
-    
+  
   </div>
-
+  
+  <!-- Boutons de navigation -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  
   <!-- Swiper JS -->
-  <script src="node_modules/swiper/swiper-bundle.min.js"></script>
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.css"></script>
+  
   <script>
-    const swiper = new Swiper('.swiper', {
-      // Paramètres Swiper
-      slidesPerView: 1,
-      spaceBetween: 30, 
-      loop: true,
+    // Attendre que le DOM soit prêt
+    document.addEventListener('DOMContentLoaded', () => {
+      const swiper = new Swiper('.swiper', {
+        // Paramètres Swiper
+        slidesPerView: 1,
+        spaceBetween: 30,
+        // Supprimez loop: true si nécessaire
+        // loop: true,
 
-      // Navigation
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      } 
+        // Navigation
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });
     });
-  </script>
+  </script>  
 
 </body>
 

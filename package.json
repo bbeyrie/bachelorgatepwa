@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "swiper": "^10.1.0"
+  },
+  "name": "bachelorgatepwa",
+  "description": "Find your perfect virtual partner 👩‍❤️‍💋‍👨 ![HeartSwipe](./static/images/imagine-an-icon-heart-shaped-for-an-application-li-top.png)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

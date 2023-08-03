@@ -1,24 +1,24 @@
 import json
 import random
 import requests
-from fastapi import FastAPI, Request, status, APIRouter
-from fastapi.responses import HTMLResponse  
+from fastapi import Request, status, APIRouter
 from fastapi.templating import Jinja2Templates
 
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="./templates")
 
 router = APIRouter()
 
-with open("data/profiles.json") as f:
+with open("./data/profils.json", encoding='utf-8') as f:
   PROFILES = json.load(f)
+
 
 @router.get("/")
 def home(request: Request):
 
-  response = requests.get("http://localhost:8000/api/profiles")
-  profiles = response.json()
+  response = requests.get("http://127.0.0.1:8000/profiles")
+  profiles = response.json().get('profils')
 
-  return templates.TemplateResponse("index.html", {"request": request, "profiles": profiles})
+  return templates.TemplateResponse("index2.html", {"request": request, "profiles": profiles})
 
 
 @router.get("/profiles")
