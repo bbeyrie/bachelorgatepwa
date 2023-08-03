@@ -62,6 +62,7 @@ def swipe(request: Request,
     for profile in PROFILES:
       if profile.get("uuid")==profile_id:
         profile.get('match').append(profile_match_id)
+        break
 
     return {
       "match": True,
@@ -75,6 +76,7 @@ def swipe(request: Request,
     for profile in PROFILES:
       if profile.get("uuid")==profile_id:
         profile.get('nomatch').append(profile_match_id)
+        break
 
     return {
       "match": False,
