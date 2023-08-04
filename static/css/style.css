@@ -1,0 +1,10 @@
+.swiper-slide img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .profile-info {
+    text-align: center;
+    margin-top: 10px;
+  }

@@ -9,16 +9,16 @@ templates = Jinja2Templates(directory="./templates")
 router = APIRouter()
 
 with open("./data/profils.json", encoding='utf-8') as f:
-  PROFILES = json.load(f)
+  PROFILES = json.load(f).get('profils')
 
 
 @router.get("/")
 def home(request: Request):
 
   response = requests.get("http://127.0.0.1:8000/profiles")
-  profiles = response.json().get('profils')
+  profiles = response.json()
 
-  return templates.TemplateResponse("index2.html", {"request": request, "profiles": profiles})
+  return templates.TemplateResponse("index.html", {"request": request, "profiles": profiles})
 
 
 @router.get("/profiles")
@@ -30,7 +30,7 @@ def get_profiles():
 def get_profile(profile_id: str):
 
   for profile in PROFILES:
-    if profile["uuid"] == profile_id:
+    if profile.get("uuid") == profile_id:
       return profile
   
   return status.HTTP_404_NOT_FOUND
@@ -57,13 +57,13 @@ def swipe(request: Request,
 
   if direction == "right":
     
-    next_profile = get_next_profile()
-
     for profile in PROFILES:
-      if profile.get("uuid")==profile_id:
+      if profile.get("uuid") == profile_id:
         profile.get('match').append(profile_match_id)
         break
 
+    # Utiliser la route get_next_profile pour obtenir le profil aléatoire suivant
+    next_profile = get_next_profile(profile_id)
     return {
       "match": True,
       "profile": next_profile
@@ -71,16 +71,16 @@ def swipe(request: Request,
 
   elif direction == "left":
 
-    next_profile = get_next_profile()
-
     for profile in PROFILES:
-      if profile.get("uuid")==profile_id:
+      if profile.get("uuid") == profile_id:
         profile.get('nomatch').append(profile_match_id)
         break
 
+    # Utiliser la route get_next_profile pour obtenir le profil aléatoire suivant
+    next_profile = get_next_profile(profile_id)
     return {
       "match": False,
-      "profile": next_profile 
+      "profile": next_profile
     }
 
   else:
