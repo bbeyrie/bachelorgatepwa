@@ -20,8 +20,8 @@ with open("./data/profils.json", encoding='utf-8') as f:
 @router.get("/")
 def home(request: Request):
 
-  response = requests.get("http://127.0.0.1:8000/profiles")
-  profiles = response.json()
+  # response = requests.get("http://127.0.0.1:8000/profiles")
+  profiles = get_profiles()
 
   return templates.TemplateResponse("index.html", {"request": request, "profiles": profiles})
 
@@ -41,9 +41,13 @@ def start(request_data: StartRequest):
 def profils(request: Request):
 
   profile = get_next_profile()
-  
-  return templates.TemplateResponse("profils.html", {"request": request, "profile": profile})
 
+  if isinstance(profile, dict):
+    return templates.TemplateResponse("profils.html", {"request": request, "profile": profile})
+  
+  else:
+    print(profile) 
+    return templates.TemplateResponse("story.html", {"request": request, "candidats": profile})
 
 @router.get("/profiles")
 def get_profiles():
@@ -65,13 +69,28 @@ def get_next_profile():
 
   random_profiles = [x.get('uuid') for x in PROFILES if x.get('match') is None]
 
+  nb_match = sum([1 for x in PROFILES if x.get('match')==True])
+
+  # Start the war
+  if nb_match == 8:
+
+    participants = [x for x in PROFILES if x.get('match')==True]
+
+    return participants
+
   if random_profiles:
 
     next_profile = random.choice(random_profiles)
 
     return get_profile(next_profile)
   
-  return NotImplemented
+  # Reset no match profiles till we get 8 profiles
+  else:
+    for p in PROFILES:
+        if p.get("match") == False:
+            p['match'] = None
+  
+    return get_next_profile()
 
 
 @router.post("/profiles/{profile_id}/swipe")

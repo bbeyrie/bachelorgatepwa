@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Lien vers le fichier de style CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+    <style>
+        /* Ajoutez des styles personnalisés ici si nécessaire */
+        .header {
+            margin-top: 1rem;
+        }
+
+        .candidate-description {
+            margin-top: 2rem;
+            border-top: 1px solid #ccc; /* Ajoutez une bordure supérieure */
+            padding-top: 1rem; /* Ajoutez un espace au-dessus du contenu */
+        }
+
+        .candidate-thumbnail {
+            max-width: 500px; /* Ajustez la largeur maximale comme souhaité */
+        }
+    </style>
+</head>
+<body>
+    <div class="position-relative vh-100 d-flex flex-column align-items-center justify-content-center" style="background-size: cover; background-repeat: no-repeat; background-position: center; background-color: white;">
+        <img src="/static/images/imagine-an-icon-heart-shaped-for-an-application-li.png" alt="Header Image" class="header-image">
+        <div class="header text-center mt-4">
+            <h1>PRESENTATION CANDIDATS</h1>
+        </div>
+        <div class="text-center mt-4">
+            {% for candidat in candidats %}
+            <div class="candidate-description mt-4">
+                <div class="d-flex align-items-center">
+                    <img src="{{ 'data/images/' + candidat.nom + '_' + candidat.age|string + '/photo_0.png' }}" alt="Photo" class="candidate-thumbnail">
+                    <div class="ml-2">
+                        <p><strong>Personne :</strong> {{ candidat.nom }} vivant à {{ candidat.ville }}, il est {{ candidat.nationalite }} d'origine.</p>
+                        <p><strong>Âge :</strong> {{ candidat.age }} ans.</p>
+                        <p><strong>Langues :</strong> Il sait parler {% for langue in candidat.langues %}le {{ langue }} {% endfor %}.</p>
+                        <p><strong>Apparence :</strong> Il mesure {{ candidat.taille }} et pèse {{ candidat.poids }}. Il a les yeux {{ candidat.yeux }}, la peau {{ candidat.peau }} et les cheveux {{ candidat.cheveux }}</p>
+                        <p><strong>Sport :</strong> {{ candidat.sport }}</p>
+                        <p><strong>Animaux :</strong> {{ candidat.animaux }}</p>
+                        <p><strong>Dessert :</strong> {{ candidat.dessert }}</p>
+                        <p><strong>Qualités :</strong> {% for qualite in candidat.qualites %} {{ qualite }}, {% endfor %}</p>
+                        <p><strong>Fumeur :</strong> {{ candidat.fume }}</p>
+                        <p><strong>Alcoolique :</strong> {{ candidat.boit }}</p>
+                        <p><strong>Défaut amusant :</strong> {{ candidat.defaut }}</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
