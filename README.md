@@ -3,6 +3,12 @@
 Find your perfect virtual partner 👩‍❤️‍💋‍👨
 ![HeartSwipe](./static/images/imagine-an-icon-heart-shaped-for-an-application-li-top.png)
 
+## Run the code
+
+```console
+uvicorn app.main:app --reload
+```
+
 ## Licenses
 
 Copyright :copyright: 2023, Dan & Ben - All Rights Reserved
