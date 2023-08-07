@@ -71,7 +71,7 @@
     <div class="profile-info">
       <ul>
         {% for key, value in profile.items() %}
-          {% if key not in ['uuid', 'match'] %}
+          {% if key not in ['uuid', 'match', 'peau', 'cheveux', 'yeux'] %}
             <li>
               <strong>{{ key }}:</strong>
               <span class="badge badge-primary">{{ value }}</span>

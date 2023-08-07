@@ -1,34 +1,27 @@
-<form id="start-form">
+<form id="start-form" class="text-center"> <!-- Ajoutez la classe text-center pour centrer le contenu -->
+  <img src="/static/images/imagine-an-icon-heart-shaped-for-an-application-li.png">
+  <div class="form-group"> <!-- Ajoutez une classe form-group pour gérer la mise en forme de l'input -->
+      <input type="text" name="username" class="form-control" placeholder="Entrez votre nom d'utilisateur"> <!-- Ajoutez la classe form-control pour appliquer le style de Bootstrap -->
+  </div>
+  <button type="submit" class="btn btn-primary">Commencer</button> <!-- Ajoutez les classes btn et btn-primary pour appliquer le style du bouton Bootstrap -->
+</form>
+<script>
+  const form = document.getElementById('start-form');
 
-    <img src="/static/images/imagine-an-icon-heart-shaped-for-an-application-li.png">
-    
-    <input type="text" name="username">
-    
-    <button type="submit">Commencer</button>
+  form.addEventListener('submit', async (e) => { // Utilisez async/await pour gérer correctement la redirection
+      e.preventDefault();
+
+      const username = form.elements['username'].value;
   
-  </form>
-  
-  <script>
-  
-    const form = document.getElementById('start-form');
+      // Appel synchrone à l'API
+      const response = await fetch('/start', {
+          method: 'POST',
+          body: JSON.stringify({ username }),
+          headers: {
+              'Content-Type': 'application/json',
+          },
+      });
 
-    form.addEventListener('submit', (e) => {
-
-    e.preventDefault();
-
-    const username = form.elements['username'].value;
-    
-    // Appel synchrone à l'API  
-    const response = fetch('/start', {
-        method: 'POST',
-        body: JSON.stringify({ username }),
-        headers: {
-                    'Content-Type': 'application/json',
-                 }
-    });
-
-    window.location.href = '/profils';
-
-    });
-
+      window.location.href = '/profils';
+  });
 </script>

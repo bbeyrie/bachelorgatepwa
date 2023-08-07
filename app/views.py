@@ -65,9 +65,13 @@ def get_next_profile():
 
   random_profiles = [x.get('uuid') for x in PROFILES if x.get('match') is None]
 
-  next_profile = random.choice(random_profiles)
+  if random_profiles:
 
-  return get_profile(next_profile)
+    next_profile = random.choice(random_profiles)
+
+    return get_profile(next_profile)
+  
+  return NotImplemented
 
 
 @router.post("/profiles/{profile_id}/swipe")
