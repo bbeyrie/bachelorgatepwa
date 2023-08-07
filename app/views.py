@@ -27,11 +27,12 @@ def home(request: Request):
 
 
 @router.post("/start")
-def start(request_data: StartRequest):
+def start(request_data: StartRequest, request: Request):
     username = request_data.username
     print(f"Username: {username}")
 
     # Traitez les données ici
+    request.session["username"] = username
 
     # Rediriger vers la route /profiles/next
     return RedirectResponse(url="/profils", status_code=302)
@@ -46,8 +47,11 @@ def profils(request: Request):
     return templates.TemplateResponse("profils.html", {"request": request, "profile": profile})
   
   else:
-    print(profile) 
-    return templates.TemplateResponse("story.html", {"request": request, "candidats": profile})
+
+    username = request.session.get("username")
+    print(username) 
+
+    return templates.TemplateResponse("story.html", {"request": request, "candidats": profile, "username": username})
 
 @router.get("/profiles")
 def get_profiles():
