@@ -1,7 +1,7 @@
 import json
 import random
 import requests
-from fastapi import Request, status, APIRouter
+from fastapi import Request, status, APIRouter, Form
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import RedirectResponse
 from pydantic import BaseModel
@@ -71,38 +71,22 @@ def get_next_profile():
 
 
 @router.post("/profiles/{profile_id}/swipe")
-def swipe(request: Request,
-          profile_id: str):
+def swipe_profile(profile_id: str, direction: str = Form(...)):
+    profile = None
 
-  direction = request.form.get("direction")
+    for p in PROFILES:
+        if p.get("uuid") == profile_id:
+            profile = p
+            break
 
-  if direction == "right":
-    
-    for profile in PROFILES:
-      if profile.get("uuid") == profile_id:
-        profile['match'] = True
-        break
+    if profile:
+        if direction == "right":
+            profile['match'] = True
+        elif direction == "left":
+            profile['match'] = False
+        else:
+            return status.HTTP_400_BAD_REQUEST
 
-    # Utiliser la route get_next_profile pour obtenir le profil aléatoire suivant
-    next_profile = get_next_profile(profile_id)
-    return {
-      "match": True,
-      "profile": next_profile
-    }
-
-  elif direction == "left":
-
-    for profile in PROFILES:
-      if profile.get("uuid") == profile_id:
-        profile['match'] = False
-        break
-
-    # Utiliser la route get_next_profile pour obtenir le profil aléatoire suivant
-    next_profile = get_next_profile(profile_id)
-    return {
-      "match": False,
-      "profile": next_profile
-    }
-
-  else:
-    return status.HTTP_400_BAD_REQUEST
+        return RedirectResponse(url="/profils", status_code=302)
+    else:
+        return status.HTTP_404_NOT_FOUND
