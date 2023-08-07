@@ -33,9 +33,9 @@
                     <img src="{{ 'data/images/' + candidat.nom + '_' + candidat.age|string + '/photo_0.png' }}" alt="Photo" class="candidate-thumbnail">
                     <div class="ml-2">
                         <p><strong>Personne :</strong> {{ candidat.nom }} vivant à {{ candidat.ville }}, il est {{ candidat.nationalite }} d'origine.</p>
-                        <p><strong>Âge :</strong> {{ candidat.age }} ans.</p>
+                        <p><strong>Âge :</strong> Il a {{ candidat.age }} ans.</p>
                         <p><strong>Langues :</strong> Il sait parler {% for langue in candidat.langues %}le {{ langue }} {% endfor %}.</p>
-                        <p><strong>Apparence :</strong> Il mesure {{ candidat.taille }} et pèse {{ candidat.poids }}. Il a les yeux {{ candidat.yeux }}, la peau {{ candidat.peau }} et les cheveux {{ candidat.cheveux }}</p>
+                        <p><strong>Apparence :</strong> Il mesure {{ candidat.taille }}cm et pèse {{ candidat.poids }}kg. Il a les yeux {{ candidat.yeux }}, la peau {{ candidat.peau }} et les cheveux {{ candidat.cheveux }}</p>
                         <p><strong>Sport :</strong> {{ candidat.sport }}</p>
                         <p><strong>Animaux :</strong> {{ candidat.animaux }}</p>
                         <p><strong>Dessert :</strong> {{ candidat.dessert }}</p>
