@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style>
+    .button-container {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .reject-button,
+    .accept-button {
+      margin: 0 10px; 
+    }
+    
+    .reject-button img,
+    .accept-button img {
+      width: 50px;
+      height: 50px;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .profile-info ul {
+      list-style-type: none; /* Masque les puces */
+    }
+
+  </style>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Lien vers le fichier de style CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <div class="swiper-container main-carousel">
+    <div class="swiper-wrapper">
+      {% for i in range(4) %}
+        <div class="swiper-slide">
+          <div class="image-container">
+            <img src="{{ 'data/images/' + profile.nom + '_' + profile.age|string + '/photo_' + i|string + '.png' }}">
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <!-- Boutons de navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <div class="button-container">
+    <button class="reject-button"><img src="/static/images/reject.svg" alt="left"></button>
+    <button class="accept-button"><img src="/static/images/approve.svg" alt="right"></button>
+  </div>
+
+  <div class="profile-details">
+    <h3>{{ profile.name }}</h3>
+    <div class="profile-info">
+      <ul>
+        {% for key, value in profile.items() %}
+          <li>
+            <strong>{{ key }}:</strong>
+            <span class="badge badge-primary">{{ value }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Attendre que le DOM soit prêt
+    document.addEventListener('DOMContentLoaded', () => {
+      const mainSwiper = new Swiper('.main-carousel', {
+        // Paramètres Swiper
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true, // Boucle infinie dans le carrousel
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

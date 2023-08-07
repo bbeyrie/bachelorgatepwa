@@ -1,100 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <!-- Lien vers le fichier de style CSS -->
-  <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
-</head>
-<body>
+<form id="start-form">
 
-  <div class="swiper-container main-carousel">
-    <div class="swiper-wrapper">
-      {% for profile in profiles %}
-        <div class="swiper-slide">
-          <div class="swiper-image-gallery swiper-container gallery-{{ loop.index }}">
-            <div class="swiper-wrapper">
-              {% for i in range(4) %}
-                <div class="swiper-slide">
-                  <img src="{{ 'data/images/' + profile.nom + '_' + profile.age|string + '/photo_' + i|string + '.png' }}">
-                </div>
-              {% endfor %}
-            </div>
-            <div class="swiper-button-next swiper-button-next-{{ loop.index }}"></div>
-            <div class="swiper-button-prev swiper-button-prev-{{ loop.index }}"></div>
-          </div>
-          <h3>{{ profile.name }}</h3>
-          <div class="profile-info">
-            {% for key, value in profile.items() %}
-              <p>{{ key }}: {{ value }}</p>
-            {% endfor %}
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-    <!-- Boutons de navigation -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <img src="/static/images/imagine-an-icon-heart-shaped-for-an-application-li.png">
+    
+    <input type="text" name="username">
+    
+    <button type="submit">Commencer</button>
+  
+  </form>
+  
   <script>
-    // Attendre que le DOM soit prêt
-    document.addEventListener('DOMContentLoaded', () => {
-      const mainSwiper = new Swiper('.main-carousel', {
-        // Paramètres Swiper
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: false, // Ne pas faire une boucle infinie dans le carrousel
+  
+    const form = document.getElementById('start-form');
 
-        // Navigation
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
-        observer: true, // Observer les changements du carrousel principal
-        observeParents: true, // Observer les changements du carrousel principal
-        on: {
-          init: function () {
-            // Activer l'interaction du carrousel principal
-            this.allowSlideNext = true;
-            this.allowSlidePrev = true;
-          },
-          slideChange: function () {
-            const currentSlideIndex = mainSwiper.activeIndex;
-            const currentGallery = document.querySelector('.gallery-' + (currentSlideIndex + 1));
-            const swiperImageGallery = currentGallery.swiper;
-            if (swiperImageGallery) {
-              // Désactiver l'interaction du carrousel principal lorsqu'un carrousel d'images individuel est actif
-              this.allowSlideNext = false;
-              this.allowSlidePrev = false;
-            }
-          },
-        },
-      });
+    form.addEventListener('submit', (e) => {
 
-      // Activer les carrousels d'images individuels pour chaque profil
-      const imageGalleries = document.querySelectorAll('.swiper-image-gallery');
-      imageGalleries.forEach((gallery, index) => {
-        const gallerySwiper = new Swiper('.gallery-' + (index + 1), {
-          slidesPerView: 1,
-          spaceBetween: 0,
-          loop: true,
-          navigation: {
-            nextEl: '.swiper-button-next-' + (index + 1),
-            prevEl: '.swiper-button-prev-' + (index + 1),
-          },
-        });
+    e.preventDefault();
 
-        // Gestion de l'interaction entre le carrousel principal et les carrousels d'images individuels
-        gallerySwiper.on('slideChange', () => {
-          mainSwiper.allowSlideNext = true;
-          mainSwiper.allowSlidePrev = true;
-        });
-      });
+    const username = form.elements['username'].value;
+    
+    // Appel synchrone à l'API  
+    const response = fetch('/start', {
+        method: 'POST',
+        body: JSON.stringify({ username }),
+        headers: {
+                    'Content-Type': 'application/json',
+                 }
     });
-  </script>
 
-</body>
-</html>
+    window.location.href = '/profils';
+
+    });
+
+</script>
