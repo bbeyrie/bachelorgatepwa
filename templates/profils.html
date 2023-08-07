@@ -63,10 +63,12 @@
     <div class="profile-info">
       <ul>
         {% for key, value in profile.items() %}
-          <li>
-            <strong>{{ key }}:</strong>
-            <span class="badge badge-primary">{{ value }}</span>
-          </li>
+          {% if key not in ['uuid', 'match'] %}
+            <li>
+              <strong>{{ key }}:</strong>
+              <span class="badge badge-primary">{{ value }}</span>
+            </li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>
