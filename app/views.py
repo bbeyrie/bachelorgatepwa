@@ -32,7 +32,7 @@ def start(request_data: StartRequest, request: Request):
     print(f"Username: {username}")
 
     # Traitez les données ici
-    request.session["username"] = username
+    request.session["username"] = username.title()
 
     # Rediriger vers la route /profiles/next
     return RedirectResponse(url="/profils", status_code=302)
