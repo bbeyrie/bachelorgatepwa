@@ -130,12 +130,12 @@
 
   <!-- Action Buttons -->
   <div class="button-container">
-    <form action="{{ url_for('swipe_profile', profile_id=profile.uuid) | replace('http://', 'https://') }}" method="post">
+    <form action="{% if request.url.hostname == '127.0.0.1' and request.url.port == 8000 %}{{ url_for('swipe_profile', profile_id=profile.uuid) }}{% else %}{{ url_for('swipe_profile', profile_id=profile.uuid) | replace('http://', 'https://') }}{% endif %}" method="post">
       <button class="reject-button" type="submit" name="direction" value="left">
         <img src="/static/images/reject.svg" alt="Reject">
       </button>
     </form>
-    <form action="{{ url_for('swipe_profile', profile_id=profile.uuid) | replace('http://', 'https://') }}" method="post">
+    <form action="{% if request.url.hostname == '127.0.0.1' and request.url.port == 8000 %}{{ url_for('swipe_profile', profile_id=profile.uuid) }}{% else %}{{ url_for('swipe_profile', profile_id=profile.uuid) | replace('http://', 'https://') }}{% endif %}" method="post">
       <button class="accept-button" type="submit" name="direction" value="right">
         <img src="/static/images/approve.svg" alt="Approve">
       </button>
