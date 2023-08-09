@@ -34,6 +34,9 @@ def start(request_data: StartRequest, request: Request):
     # Traitez les données ici
     request.session["username"] = username.title()
 
+    for p in PROFILES:
+      p['match'] = None
+
     # Rediriger vers la route /profiles/next
     return RedirectResponse(url="/profils", status_code=302)
 
