@@ -15,6 +15,9 @@ router = APIRouter()
 
 with open("./data/profils.json", encoding='utf-8') as f:
   PROFILES = json.load(f).get('profils')
+  felix = [x for x in PROFILES if x.get('nom')=="Félix"]
+  PROFILES = felix + list(random.sample([x for x in PROFILES if x.get('nom')!="Félix"], 15))
+
 
 
 @router.get("/")
@@ -33,6 +36,12 @@ def start(request_data: StartRequest, request: Request):
 
     # Traitez les données ici
     request.session["username"] = username.title()
+
+    with open("./data/profils.json", encoding='utf-8') as f:
+      global PROFILES
+      PROFILES = json.load(f).get('profils')
+      felix = [x for x in PROFILES if x.get('nom')=="Félix"]
+      PROFILES = felix + list(random.sample([x for x in PROFILES if x.get('nom')!="Félix"], 15))
 
     for p in PROFILES:
       p['match'] = None
