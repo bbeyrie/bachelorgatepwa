@@ -150,7 +150,7 @@
         {% for key, value in profile.items() %}
           {% if key not in ['uuid', 'match', 'peau', 'cheveux', 'yeux'] %}
             <li>
-              <strong>{{ key }}:</strong>
+              <strong>{{ key.split('_') | map('title') | join(' ') }}:</strong>
               <span class="badge">{{ value }}</span>
             </li>
           {% endif %}
