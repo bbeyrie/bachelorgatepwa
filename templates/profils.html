@@ -148,7 +148,7 @@
     <div class="profile-info">
       <ul>
         {% for key, value in profile.items() %}
-          {% if key not in ['uuid', 'match', 'peau', 'cheveux', 'yeux'] %}
+          {% if key not in ['uuid', 'match', 'peau', 'cheveux', 'yeux', 'sexe'] %}
             <li>
               <strong>{{ key.split('_') | map('title') | join(' ') }}:</strong>
               <span class="badge">{{ value }}</span>

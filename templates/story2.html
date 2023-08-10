@@ -1,0 +1,118 @@
+    <h2 style="font-size: 2.5rem; color: #e74c3c; text-align: center; margin-bottom: 2rem;">
+        <span style="font-weight: bold; font-size: 2.8rem; color: #3498db;">Le Tournoi</span>
+        <br>
+        <span style="font-size: 2.2rem; color: #27ae60;">de l'Amour :</span>
+        <br>
+        <span style="font-size: 2rem; color: #e74c3c;">La Quête de</span>
+        <span style="font-size: 2.2rem; color: #3498db;">{{ request.session.get("username") }}</span>
+    </h2>
+    <!-- Quart de finale : {{ candidats[0].nom }} vs. {{ candidats[1].nom }} -->
+    <div class="section">
+        <h2>Quart de finale :</h2>
+        <div class="competition-description">
+            <div class="matchup">
+                <div class="matchup-names">{{ candidats[0].nom }} vs. {{ candidats[1].nom }}</div>
+                <div class="matchup-details">
+                    {{ request.session.get("username") }} se retrouve face à deux personnalités très différentes. D'un côté, il y a {{ candidats[0].nom }}, le charmant chasseur de souris professionnel. Il envoie à {{ request.session.get("username") }} des sourires taquins, jouant de sa nature agile et indépendante pour la faire rire. De l'autre côté, {{ candidats[1].nom }}, le chirurgien passionné par la natation, intrigue {{ request.session.get("username") }} avec son intelligence et sa persévérance. Ils se lancent dans des conversations stimulantes sur des sujets variés. Au final, {{ request.session.get("username") }} est plus attirée par le charme mystérieux de {{ candidats[1].nom }} et sa capacité à la surprendre.
+                </div>
+            </div>
+            <!-- Espacement stylé -->
+            <div class="matchup-space"></div>
+
+            <!-- Quart de finale : {{ candidats[2].nom }} vs. {{ candidats[3].nom }} -->
+            <div class="matchup">
+                <div class="matchup-names">{{ candidats[2].nom }} vs. {{ candidats[3].nom }}</div>
+                <div class="matchup-details">
+                    {{ request.session.get("username") }} se retrouve face à {{ candidats[2].nom }}, l'étudiant en droit dynamique et charismatique, ainsi que {{ candidats[3].nom }}, le photographe créatif. {{ candidats[2].nom }} tente de séduire {{ request.session.get("username") }} en l'invitant à assister à un match de rugby, lui montrant sa joie de vivre et son côté fêtard. {{ candidats[3].nom }}, de son côté, l'emmène dans un studio photo improvisé et capture sa beauté naturelle avec son objectif. {{ request.session.get("username") }} est touchée par l'approche sensible de {{ candidats[3].nom }} et sa capacité à capturer l'instant présent.
+                </div>
+            </div>
+            <!-- Espacement stylé -->
+            <div class="matchup-space"></div>
+
+            <!-- Quart de finale : {{ candidats[4].nom }} vs. {{ candidats[5].nom }} -->
+            <div class="matchup">
+                <div class="matchup-names">{{ candidats[4].nom }} vs. {{ candidats[5].nom }}</div>
+                <div class="matchup-details">
+                    {{ request.session.get("username") }} est confrontée à un choix entre {{ candidats[4].nom }}, le policier protecteur et loyal, et {{ candidats[5].nom }}, le designer graphique sociable et curieux. {{ candidats[4].nom }} essaie d'impressionner {{ request.session.get("username") }} en la faisant participer à une séance d'entraînement de musculation, tout en laissant transparaître son côté protecteur. De l'autre côté, {{ candidats[5].nom }} l'emmène dans une aventure d'escalade en plein air, lui montrant sa créativité et son côté spontané. {{ request.session.get("username") }} se sent émotionnellement connectée à {{ candidats[5].nom }} et apprécie sa curiosité.
+                </div>
+            </div>
+            <!-- Espacement stylé -->
+            <div class="matchup-space"></div>
+
+            <!-- Quart de finale : {{ candidats[6].nom }} vs. {{ candidats[7].nom }} -->
+            <div class="matchup">
+                <div class="matchup-names">{{ candidats[6].nom }} vs. {{ candidats[7].nom }}</div>
+                <div class="matchup-details">
+                    {{ request.session.get("username") }} est confrontée à un choix entre {{ candidats[6].nom }}, le professeur d'histoire patient et intelligent, et {{ candidats[7].nom }}, l'architecte pragmatique et créatif. {{ candidats[6].nom }} partage avec {{ request.session.get("username") }} des récits fascinants du passé et lui offre un délicieux dessert traditionnel tchèque. De son côté, {{ candidats[7].nom }} l'invite à explorer des concepts architecturaux novateurs et la pousse à penser différemment. {{ request.session.get("username") }} se sent attirée par la profondeur d'esprit de {{ candidats[6].nom }}.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demi Finale -->
+    <div class="section">
+        <h2>Demi Finale :</h2>
+        <div class="competition-description">
+            <!-- Demi-finale : {{ candidats[1].nom }} vs. {{ candidats[3].nom }} -->
+            <div class="matchup">
+                <div class="matchup-names">{{ candidats[1].nom }} vs. {{ candidats[3].nom }}</div>
+                <div class="matchup-details">
+                    {{ request.session.get("username") }} doit maintenant choisir entre {{ candidats[1].nom }}, le chirurgien méticuleux, et {{ candidats[3].nom }}, le photographe observateur. Les discussions intellectuelles avec {{ candidats[1].nom }} continuent de captiver {{ request.session.get("username") }}, mais {{ candidats[3].nom }} parvient à toucher son cœur en présentant une série de photos émouvantes qui racontent une histoire d'amour. Cette connexion émotionnelle pousse {{ request.session.get("username") }} à choisir {{ candidats[3].nom }}.
+                </div>
+            </div>
+            <div class="matchup-space"></div>
+
+            <!-- Demi-finale : {{ candidats[5].nom }} vs. {{ candidats[7].nom }} -->
+            <div class="matchup">
+                <div class="matchup-names">{{ candidats[5].nom }} vs. {{ candidats[7].nom }}</div>
+                <div class="matchup-details">
+                    La compétition entre {{ candidats[5].nom }} et {{ candidats[7].nom }} devient intense. Les aventures audacieuses de {{ candidats[5].nom }} l'ont rapproché de {{ request.session.get("username") }}, mais la profondeur de compréhension de {{ candidats[7].nom }} pour les émotions et les relations humaines crée une connexion spéciale. Finalement, {{ request.session.get("username") }} décide de suivre son cœur et de choisir {{ candidats[7].nom }}.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Finale -->
+    <div class="section">
+        <h2>Finale :</h2>
+        <div class="competition-description">
+            <!-- Finale : {{ candidats[3].nom }} vs. {{ candidats[7].nom }} -->
+            <div class="matchup">
+                <div class="matchup-names">{{ candidats[3].nom }} vs. {{ candidats[7].nom }}</div>
+                <div class="matchup-details">
+                    {{ request.session.get("username") }} est confrontée à une décision difficile entre {{ candidats[3].nom }} et {{ candidats[7].nom }}. Les moments partagés avec {{ candidats[3].nom }} ont été remplis d'aventures exaltantes et de moments joyeux. Cependant, la profondeur émotionnelle et l'intelligence de {{ candidats[7].nom }} continuent de l'attirer. Après une longue réflexion, {{ request.session.get("username") }} choisit {{ candidats[7].nom }} comme son partenaire, croyant en leur capacité à construire une relation solide basée sur la compréhension mutuelle.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- La vie d'après -->
+    <div class="section">
+        <h2>La vie d’après :</h2>
+        <div class="competition-description life-after">
+            <div class="life-after-title">
+                Après avoir choisi {{ candidats[7].nom }} comme son partenaire, la vie de {{ request.session.get("username") }} prend une nouvelle direction, pleine d'excitation et de promesses. Les premiers mois de leur relation sont empreints de découvertes mutuelles, d'ajustements et de moments mémorables.
+            </div>
+            <div class="life-after-text">
+                Les deux amoureux continuent à partager leur passion pour l'art et la culture. Ils passent des week-ends à visiter des musées, à flâner dans les galeries d'art et à assister à des représentations théâtrales. Leurs discussions passionnées évoluent souvent en débats stimulants et en réflexions profondes sur l'impact de l'art sur la société et l'âme humaine.
+                <br><br>
+                Tous deux partagent également un amour pour la nature et l'aventure. Ils entreprennent des randonnées dans les montagnes, des escapades en forêt et des voyages dans des endroits pittoresques. Ces moments en plein air renforcent leur connexion avec la beauté du monde qui les entoure et renforcent leur lien en créant des souvenirs inoubliables.
+                <br><br>
+                Leur appartement devient un espace où l'intellect et la créativité s'épanouissent. Les étagères sont remplies de livres variés, allant de la philosophie à la littérature classique en passant par l'histoire de l'art. {{ candidats[7].nom }} et {{ request.session.get("username") }} passent des soirées confortables à lire ensemble, à partager leurs réflexions et à se perdre dans des mondes imaginaires.
+                <br><br>
+                Mais leur vie n'est pas dépourvue de moments de légèreté et de spontanéité. {{ candidats[7].nom }} surprend {{ request.session.get("username") }} avec des petits gestes d'affection, comme des petits déjeuners au lit et des pique-niques improvisés. {{ request.session.get("username") }}, de son côté, organise des soirées cinéma à domicile, projetant des films classiques et contemporains qui suscitent des conversations animées.
+                <br><br>
+                Au fil des ans, leur relation se consolide davantage. Ils affrontent ensemble les hauts et les bas de la vie, soutenant l'un l'autre dans les moments difficiles et célébrant les victoires ensemble. Leurs projets personnels se nourrissent mutuellement, et ils trouvent l'inspiration et le soutien nécessaires pour réaliser leurs rêves.
+                <br><br>
+                Les voyages continuent de jouer un rôle central dans leur histoire. Ils explorent des destinations exotiques, immergés dans de nouvelles cultures, des saveurs exquises et des aventures inédites. Ces voyages élargissent leurs horizons et renforcent leur désir de découvrir le monde ensemble.
+                <br><br>
+                Finalement, {{ request.session.get("username") }} et {{ candidats[7].nom }} se rendent compte que leur amour a évolué en une relation profonde et significative. Ils ont créé un espace où l'intellect et les émotions s'entremêlent harmonieusement. Leur connexion va bien au-delà de l'apparence extérieure, se basant sur une compréhension mutuelle, un respect profond et une affection sincère.
+                <br><br>
+                Et ainsi, les années passent, laissant une trace indélébile de leur histoire d'amour exceptionnelle. Ensemble, ils continuent de grandir, d'apprendre et de créer, construisant une vie riche en moments précieux et en souvenirs qui les accompagneront pour toujours. Une aventure d'amour qui a débuté dans une compétition romantique et qui a évolué en une union profonde et durable, où l'intellect et le cœur s'unissent pour former une symphonie éternelle.
+            </div>
+            <div class="hearts">
+                <div class="heart-icon bottom-left-heart">❤️</div>
+                <div class="heart-icon middle-heart">❤️</div>
+                <div class="heart-icon bottom-right-heart">❤️</div>
+            </div>
+        </div>
+    </div>

@@ -31,7 +31,8 @@
             "opinion_politique": null,
             "signe_astrologique": "Lion",
             "chanson_preferee": "Despacito",
-            "artiste_prefere": "Luis Fonsi"
+            "artiste_prefere": "Luis Fonsi",
+            "sexe": "Homme"
         },
         {
             "uuid": "ad4cf4068e474959a284310b78e51070",
@@ -64,7 +65,8 @@
             "opinion_politique": null,
             "signe_astrologique": "Scorpion",
             "chanson_preferee": "Garota de Ipanema",
-            "artiste_prefere": "Antônio Carlos Jobim"
+            "artiste_prefere": "Antônio Carlos Jobim",
+            "sexe": "Homme"
         },
         {
             "uuid": "5695e6bb2e4d4e0d816d51b4da6ba3eb",
@@ -98,7 +100,8 @@
             "opinion_politique": null,
             "signe_astrologique": "Vierge",
             "chanson_preferee": "Du Hast",
-            "artiste_prefere": "Rammstein"
+            "artiste_prefere": "Rammstein",
+            "sexe": "Homme"
         },
         {
             "uuid": "1ea48e1ff420451d9186a117e61b73bf",
@@ -132,7 +135,8 @@
             "opinion_politique": null,
             "signe_astrologique": "Verseau",
             "chanson_preferee": "Ya Rayah",
-            "artiste_prefere": "Dahmane El Harrachi"
+            "artiste_prefere": "Dahmane El Harrachi",
+            "sexe": "Homme"
         },
         {
             "uuid": "3c8c6b7a9d3c485f84e5d6591fefab73",
@@ -166,7 +170,8 @@
             "opinion_politique": "Libertaire",
             "signe_astrologique": "Balance",
             "chanson_preferee": "La vie en rose",
-            "artiste_prefere": "Edith Piaf"
+            "artiste_prefere": "Edith Piaf",
+            "sexe": "Homme"
         },
         {
             "uuid": "81e694296d92416caf6135db1f011a02",
@@ -200,7 +205,8 @@
             "opinion_politique": null,
             "signe_astrologique": "Bélier",
             "chanson_preferee": "Bella Ciao",
-            "artiste_prefere": "Fabrizio De André"
+            "artiste_prefere": "Fabrizio De André",
+            "sexe": "Homme"
         },
         {
             "uuid": "ed0803f211804e618a4ff3802a5762ea",
@@ -234,7 +240,8 @@
             "opinion_politique": null,
             "signe_astrologique": "Capricorne",
             "chanson_preferee": "Smoke on the Water",
-            "artiste_prefere": "Deep Purple"
+            "artiste_prefere": "Deep Purple",
+            "sexe": "Homme"
         },
         {
             "uuid": "eeea559a2ca34d76bb964c4721572c1c",
@@ -268,7 +275,8 @@
             "opinion_politique": "Conservateur",
             "signe_astrologique": "Sagittaire",
             "chanson_preferee": "Katyusha",
-            "artiste_prefere": "Lidiya Ruslanova"
+            "artiste_prefere": "Lidiya Ruslanova",
+            "sexe": "Homme"
         },
         {
             "uuid": "026191c499ab403884d24cfd0eaf06a4",
@@ -302,7 +310,8 @@
             "opinion_politique": "Modéré",
             "signe_astrologique": "Taureau",
             "chanson_preferee": "Sultans of Swing",
-            "artiste_prefere": "Dire Straits"
+            "artiste_prefere": "Dire Straits",
+            "sexe": "Homme"
         },
         {
             "uuid": "872d062be8284edfa671cc8c9c7cdaf3",
@@ -336,7 +345,8 @@
             "opinion_politique": "Progressiste",
             "signe_astrologique": "Gémeaux",
             "chanson_preferee": "Smooth",
-            "artiste_prefere": "Santana"
+            "artiste_prefere": "Santana",
+            "sexe": "Homme"
         },
         {
             "uuid": "51d8ae3b00074fcabe1182416b13c080",
@@ -370,7 +380,8 @@
             "opinion_politique": "Centriste",
             "signe_astrologique": "Lion",
             "chanson_preferee": "Don't Stop Believin' - Journey",
-            "artiste_prefere": "John Lennon"
+            "artiste_prefere": "John Lennon",
+            "sexe": "Homme"
         },
         {
             "uuid": "01d55c01575f403fb300797cd392c214",
@@ -404,7 +415,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Taureau",
             "chanson_preferee": "Bohemian Rhapsody",
-            "artiste_prefere": "Queen"
+            "artiste_prefere": "Queen",
+            "sexe": "Homme"
         },
         {
             "uuid": "f69616ca2e2844599c9cc20635935e1b",
@@ -438,7 +450,8 @@
             "opinion_politique": "Progressiste",
             "signe_astrologique": "Poissons",
             "chanson_preferee": "Volver",
-            "artiste_prefere": "Carlos Gardel"
+            "artiste_prefere": "Carlos Gardel",
+            "sexe": "Homme"
         },
         {
             "uuid": "6c27e3c14e644b9091c9243180ee1d40",
@@ -472,7 +485,8 @@
             "opinion_politique": "Modéré",
             "signe_astrologique": "Verseau",
             "chanson_preferee": "Wind of Change",
-            "artiste_prefere": "Scorpions"
+            "artiste_prefere": "Scorpions",
+            "sexe": "Homme"
         },
         {
             "uuid": "4ae6fa731a164c0895e0661874fa1dda",
@@ -506,7 +520,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Balance",
             "chanson_preferee": "Take on Me",
-            "artiste_prefere": "a-ha"
+            "artiste_prefere": "a-ha",
+            "sexe": "Homme"
         },
         {
             "uuid": "01ec31b4c19444e7bca189c0ff2795c7",
@@ -540,7 +555,8 @@
             "opinion_politique": "Centriste",
             "signe_astrologique": "Cancer",
             "chanson_preferee": "Jai Ho",
-            "artiste_prefere": "A.R. Rahman"
+            "artiste_prefere": "A.R. Rahman",
+            "sexe": "Homme"
         },
         {
             "uuid": "f4b5882be81c4adaabb8f1d32f70be84",
@@ -574,7 +590,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Bélier",
             "chanson_preferee": "Mas Que Nada",
-            "artiste_prefere": "Sergio Mendes"
+            "artiste_prefere": "Sergio Mendes",
+            "sexe": "Homme"
         },
         {
             "uuid": "8ccc9db4c8674f538949f98c815b111b",
@@ -608,7 +625,8 @@
             "opinion_politique": "Conservateur",
             "signe_astrologique": "Capricorne",
             "chanson_preferee": "Duša u Noktima",
-            "artiste_prefere": "Đorđe Balašević"
+            "artiste_prefere": "Đorđe Balašević",
+            "sexe": "Homme"
         },
         {
             "uuid": "d37eaf59aa20488cae3cc779dcef3b4a",
@@ -642,7 +660,8 @@
             "opinion_politique": "Centre",
             "signe_astrologique": "Bélier",
             "chanson_preferee": "Happy - Pharrell Williams",
-            "artiste_prefere": "Bob Marley"
+            "artiste_prefere": "Bob Marley",
+            "sexe": "Homme"
         },
         {
             "uuid": "daa7b81e9ce84d2fa941736930e8e0f8",
@@ -676,7 +695,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Balance",
             "chanson_preferee": "Bohemian Rhapsody - Queen",
-            "artiste_prefere": "Wong Kar-wai"
+            "artiste_prefere": "Wong Kar-wai",
+            "sexe": "Homme"
         },
         {
             "uuid": "fd7611328a8a4a8f995a63b7b104ddc9",
@@ -710,7 +730,8 @@
             "opinion_politique": "Conservateur",
             "signe_astrologique": "Sagittaire",
             "chanson_preferee": "Stairway to Heaven - Led Zeppelin",
-            "artiste_prefere": "William Shakespeare"
+            "artiste_prefere": "William Shakespeare",
+            "sexe": "Homme"
         },
         {
             "uuid": "d12ce957206943d087f46c6e0decba55",
@@ -744,7 +765,8 @@
             "opinion_politique": "Centriste",
             "signe_astrologique": "Verseau",
             "chanson_preferee": "Imagine - Ariana Grande",
-            "artiste_prefere": "Yves Tanguy "
+            "artiste_prefere": "Yves Tanguy ",
+            "sexe": "Homme"
         },
         {
             "uuid": "e5bba6e16204423188904682b55949e5",
@@ -778,7 +800,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Taureau",
             "chanson_preferee": "Bella Ciao - Manu Pilas",
-            "artiste_prefere": "Leonardo da Vinci"
+            "artiste_prefere": "Leonardo da Vinci",
+            "sexe": "Homme"
         },
         {
             "uuid": "e4136e2d26704b6b915e12a3077f564a",
@@ -812,7 +835,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Lion",
             "chanson_preferee": "Vivir Mi Vida - Marc Anthony",
-            "artiste_prefere": "Vivian Maier"
+            "artiste_prefere": "Vivian Maier",
+            "sexe": "Homme"
         },
         {
             "uuid": "778d77ce9dd941a6b0a946ab39e023fe",
@@ -846,7 +870,8 @@
             "opinion_politique": "Centriste",
             "signe_astrologique": "Scorpion",
             "chanson_preferee": "Bohemian Rhapsody - Queen",
-            "artiste_prefere": "Zaha Hadid"
+            "artiste_prefere": "Zaha Hadid",
+            "sexe": "Homme"
         },
         {
             "uuid": "bac681116d7b4cf8a1f11cfed78d510f",
@@ -880,7 +905,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Gémeaux",
             "chanson_preferee": "Bella Ciao - Manu Pilas",
-            "artiste_prefere": "Salvador Dalí"
+            "artiste_prefere": "Salvador Dalí",
+            "sexe": "Homme"
         },
         {
             "uuid": "c55e77c716bc4b7f812b64b1790c90d3",
@@ -914,7 +940,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Verseau",
             "chanson_preferee": "Shape of My Heart - Sting",
-            "artiste_prefere": "Vincent van Gogh"
+            "artiste_prefere": "Vincent van Gogh",
+            "sexe": "Homme"
         },
         {
             "uuid": "02e75e104a1547ad85c942111c1c8bba",
@@ -948,7 +975,8 @@
             "opinion_politique": "Non affilié",
             "signe_astrologique": "Balance",
             "chanson_preferee": "Sukiyaki - Kyu Sakamoto",
-            "artiste_prefere": "Hokusai"
+            "artiste_prefere": "Hokusai",
+            "sexe": "Homme"
         },
         {
             "uuid": "1686e82374864fab80efeaafcd11ee7b",
@@ -982,7 +1010,8 @@
             "opinion_politique": "Progressiste",
             "signe_astrologique": "Gémeaux",
             "chanson_preferee": "Despacito - Luis Fonsi",
-            "artiste_prefere": "Pablo Picasso"
+            "artiste_prefere": "Pablo Picasso",
+            "sexe": "Homme"
         },
         {
             "uuid": "1584643db37b496da33c408efb3a7449",
@@ -1016,7 +1045,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Sagittaire",
             "chanson_preferee": "Viva la Vida - Coldplay",
-            "artiste_prefere": "Nikola Tesla"
+            "artiste_prefere": "Nikola Tesla",
+            "sexe": "Homme"
         },
         {
             "uuid": "0c6e7fc18c3e49a29d3504fa0e463cd9",
@@ -1050,7 +1080,8 @@
             "opinion_politique": "Centriste",
             "signe_astrologique": "Vierge",
             "chanson_preferee": "Shape of You - Ed Sheeran",
-            "artiste_prefere": "Claude Monet"
+            "artiste_prefere": "Claude Monet",
+            "sexe": "Homme"
         },
         {
             "uuid": "89b94b495e3840dfbc9732875d00948f",
@@ -1083,7 +1114,8 @@
             "opinion_politique": "Écologiste",
             "signe_astrologique": "Taureau",
             "chanson_preferee": "Riders on the Storm - The Doors",
-            "artiste_prefere": "Isabella Rossellini"
+            "artiste_prefere": "Isabella Rossellini",
+            "sexe": "Homme"
         },
         {
             "uuid": "e45f6bab2f474a569adbf58e1cda092f",
@@ -1117,7 +1149,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Verseau",
             "chanson_preferee": "Billie Jean - Chris Cornell (Cover)",
-            "artiste_prefere": "Leonardo da Vinci"
+            "artiste_prefere": "Leonardo da Vinci",
+            "sexe": "Homme"
         },
         {
             "uuid": "91e2a38823f741b3bacfedc1b21d8bf0",
@@ -1151,7 +1184,8 @@
             "opinion_politique": "Progressiste",
             "signe_astrologique": "Scorpion",
             "chanson_preferee": "Hotel California - Eagles",
-            "artiste_prefere": "Frida Kahlo"
+            "artiste_prefere": "Frida Kahlo",
+            "sexe": "Homme"
         },
         {
             "uuid": "70e88f86f34b414395dd809c26e6fc8b",
@@ -1186,7 +1220,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Balance",
             "chanson_preferee": "Hotel California - Eagles",
-            "artiste_prefere": "Pablo Picasso"
+            "artiste_prefere": "Pablo Picasso",
+            "sexe": "Homme"
         },
         {
             "uuid": "2c59032eca9448ad8ae5108cd2e173df",
@@ -1219,7 +1254,8 @@
             "opinion_politique": "Écologiste",
             "signe_astrologique": "Gémeaux",
             "chanson_preferee": "Stairway to Heaven - Led Zeppelin",
-            "artiste_prefere": "Salvador Dalí"
+            "artiste_prefere": "Salvador Dalí",
+            "sexe": "Homme"
         },
         {
             "uuid": "2c64a6967bbc4d8ea2ea4acfb242c89e",
@@ -1253,7 +1289,8 @@
             "opinion_politique": "Centriste",
             "signe_astrologique": "Capricorne",
             "chanson_preferee": "Purple Haze - Jimi Hendrix",
-            "artiste_prefere": "Andy Warhol"
+            "artiste_prefere": "Andy Warhol",
+            "sexe": "Homme"
         },
         {
             "uuid": "b36cf5135e60451eaf986d14516d91ef",
@@ -1287,7 +1324,8 @@
             "opinion_politique": "Progressiste",
             "signe_astrologique": "Verseau",
             "chanson_preferee": "Sweet Child o' Mine - Guns N' Roses",
-            "artiste_prefere": "Janelle Monáe"
+            "artiste_prefere": "Janelle Monáe",
+            "sexe": "Homme"
         },
         {
             "uuid": "c56bc54b464348528930f105f21043cd",
@@ -1321,7 +1359,8 @@
             "opinion_politique": "Centriste",
             "signe_astrologique": "Taureau",
             "chanson_preferee": "Billie Jean - Michael Jackson",
-            "artiste_prefere": "Vik Muniz"
+            "artiste_prefere": "Vik Muniz",
+            "sexe": "Homme"
         },
         {
             "uuid": "64b74799a3a447fcb4a99e001d6c468d",
@@ -1355,7 +1394,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Lion",
             "chanson_preferee": "Wonderwall - Oasis",
-            "artiste_prefere": "Marina Abramović"
+            "artiste_prefere": "Marina Abramović",
+            "sexe": "Homme"
         },
         {
             "uuid": "cc6e94a418cb420dafc9acff6c5e2855",
@@ -1389,7 +1429,8 @@
             "opinion_politique": "Centriste",
             "signe_astrologique": "Verseau",
             "chanson_preferee": "Boogie Wonderland - Earth, Wind & Fire",
-            "artiste_prefere": "Tim Burton"
+            "artiste_prefere": "Tim Burton",
+            "sexe": "Homme"
         },
         {
             "uuid": "8f4610796c174991821836bafba54b22",
@@ -1422,7 +1463,8 @@
             "opinion_politique": "Conservateur",
             "signe_astrologique": "Scorpion",
             "chanson_preferee": "Smells Like Teen Spirit - Nirvana",
-            "artiste_prefere": "Tracey Emin"
+            "artiste_prefere": "Tracey Emin",
+            "sexe": "Homme"
         },
         {
             "uuid": "3eb83a4e9e294bdd9ab6b3c79aa4e914",
@@ -1432,7 +1474,10 @@
             "poids": 80,
             "nationalite": "Français",
             "peau": "blanche",
-            "langues": ["français", "occitan"],
+            "langues": [
+                "français",
+                "occitan"
+            ],
             "cheveux": "blonds",
             "metier": "fermier",
             "sport": "rugby",
@@ -1441,7 +1486,11 @@
             "animaux": true,
             "yeux": "bleus",
             "dessert": "tarte aux myrtilles",
-            "qualites": ["Travailleur", "Humble", "Honnête"],
+            "qualites": [
+                "Travailleur",
+                "Humble",
+                "Honnête"
+            ],
             "defaut": "Raconte des blagues de fermier tout le temps",
             "ville": "Artagnan",
             "match": null,
@@ -1449,7 +1498,8 @@
             "opinion_politique": "Centriste",
             "signe_astrologique": "Taureau",
             "chanson_preferee": "Simple Man - Lynyrd Skynyrd",
-            "artiste_prefere": "Lynyrd Skynyrd"
+            "artiste_prefere": "Lynyrd Skynyrd",
+            "sexe": "Homme"
         },
         {
             "uuid": "35f5f37ce0484e3f9a82e62aeb6f8c29",
@@ -1459,7 +1509,9 @@
             "poids": 90,
             "nationalite": "Américain",
             "peau": "bronzée",
-            "langues": ["anglais"],
+            "langues": [
+                "anglais"
+            ],
             "cheveux": "bruns",
             "metier": "cow-boy",
             "sport": "équitation",
@@ -1468,7 +1520,11 @@
             "animaux": true,
             "yeux": "verts",
             "dessert": "tarte aux pommes",
-            "qualites": ["Aventureux", "Sociable", "Débrouillard"],
+            "qualites": [
+                "Aventureux",
+                "Sociable",
+                "Débrouillard"
+            ],
             "defaut": "Ne peut pas résister à siffloter des airs de western",
             "ville": "Dodge City",
             "match": null,
@@ -1476,7 +1532,8 @@
             "opinion_politique": "Conservateur",
             "signe_astrologique": "Sagittaire",
             "chanson_preferee": "Ring of Fire - Johnny Cash",
-            "artiste_prefere": "Clint Eastwood"
+            "artiste_prefere": "Clint Eastwood",
+            "sexe": "Homme"
         },
         {
             "uuid": "f08b7e7d9dd8408c92427f17478d39c5",
@@ -1486,7 +1543,10 @@
             "poids": 75,
             "nationalite": "Français",
             "peau": "blanche",
-            "langues": ["français", "anglais"],
+            "langues": [
+                "français",
+                "anglais"
+            ],
             "cheveux": "châtains",
             "metier": "professeur d'université",
             "sport": "lecture",
@@ -1495,7 +1555,11 @@
             "animaux": false,
             "yeux": "marron",
             "dessert": "macarons",
-            "qualites": ["Intelligent", "Curieux", "Sensible"],
+            "qualites": [
+                "Intelligent",
+                "Curieux",
+                "Sensible"
+            ],
             "defaut": "Se perd souvent dans ses pensées",
             "ville": "Paris",
             "match": null,
@@ -1503,7 +1567,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Balance",
             "chanson_preferee": "I Want to Hold Your Hand - The Beatles",
-            "artiste_prefere": "Jean-Michel Basquiat"
+            "artiste_prefere": "Jean-Michel Basquiat",
+            "sexe": "Homme"
         },
         {
             "uuid": "dc78b8100c8641cd8a90673b2bf01d9f",
@@ -1513,7 +1578,9 @@
             "poids": 65,
             "nationalite": "Français",
             "peau": "blanche",
-            "langues": ["français"],
+            "langues": [
+                "français"
+            ],
             "cheveux": "gris",
             "metier": "ermite",
             "sport": "randonnée",
@@ -1522,7 +1589,11 @@
             "animaux": true,
             "yeux": "bleus",
             "dessert": "gâteau aux noix",
-            "qualites": ["Spirituel", "Attentionné envers la nature", "Serein"],
+            "qualites": [
+                "Spirituel",
+                "Attentionné envers la nature",
+                "Serein"
+            ],
             "defaut": "Parle aux animaux sauvages comme s'ils étaient ses amis",
             "ville": "Chamonix",
             "match": null,
@@ -1530,7 +1601,8 @@
             "opinion_politique": "Indépendant",
             "signe_astrologique": "Poissons",
             "chanson_preferee": "The Sound of Silence - Simon & Garfunkel",
-            "artiste_prefere": "Vincent van Gogh"
+            "artiste_prefere": "Vincent van Gogh",
+            "sexe": "Homme"
         },
         {
             "uuid": "a5a4a26c73114712b067aef3a9f60b8e",
@@ -1540,7 +1612,9 @@
             "poids": 85,
             "nationalite": "Français",
             "peau": "blanche",
-            "langues": ["français"],
+            "langues": [
+                "français"
+            ],
             "cheveux": "roux",
             "metier": "pompier",
             "sport": "musculation",
@@ -1549,7 +1623,11 @@
             "animaux": true,
             "yeux": "verts",
             "dessert": "crème brûlée",
-            "qualites": ["Héroïque", "Sociable", "Engagé"],
+            "qualites": [
+                "Héroïque",
+                "Sociable",
+                "Engagé"
+            ],
             "defaut": "Se comporte comme s'il était toujours en mission de sauvetage",
             "ville": "Marseille",
             "match": null,
@@ -1557,7 +1635,8 @@
             "opinion_politique": "Progressiste",
             "signe_astrologique": "Lion",
             "chanson_preferee": "Eye of the Tiger - Survivor",
-            "artiste_prefere": "Salvador Dali"
+            "artiste_prefere": "Salvador Dali",
+            "sexe": "Homme"
         },
         {
             "uuid": "f39c34e2e08943d28f54f47e01c54e0b",
@@ -1567,7 +1646,10 @@
             "poids": 80,
             "nationalite": "Français",
             "peau": "blanche",
-            "langues": ["français", "anglais"],
+            "langues": [
+                "français",
+                "anglais"
+            ],
             "cheveux": "bruns",
             "metier": "architecte",
             "sport": "escalade",
@@ -1576,7 +1658,11 @@
             "animaux": true,
             "yeux": "marron",
             "dessert": "tarte aux fraises",
-            "qualites": ["Créatif", "Aventureux", "Sociable"],
+            "qualites": [
+                "Créatif",
+                "Aventureux",
+                "Sociable"
+            ],
             "defaut": "Distrait",
             "ville": "Lyon",
             "match": null,
@@ -1584,7 +1670,8 @@
             "opinion_politique": "Centriste",
             "signe_astrologique": "Balance",
             "chanson_preferee": "Hotel California - Eagles",
-            "artiste_prefere": "Banksy"
+            "artiste_prefere": "Banksy",
+            "sexe": "Homme"
         },
         {
             "uuid": "99f0a20f9b4b4d7c9f7f1f9a03d8797c",
@@ -1594,7 +1681,9 @@
             "poids": 70,
             "nationalite": "Français",
             "peau": "blanche",
-            "langues": ["français"],
+            "langues": [
+                "français"
+            ],
             "cheveux": "blonds",
             "metier": "vétérinaire",
             "sport": "course à pied",
@@ -1603,7 +1692,11 @@
             "animaux": true,
             "yeux": "bleus",
             "dessert": "éclair au café",
-            "qualites": ["Attentionné", "Sensible", "Minutieux"],
+            "qualites": [
+                "Attentionné",
+                "Sensible",
+                "Minutieux"
+            ],
             "defaut": "Perfectionniste",
             "ville": "Bordeaux",
             "match": null,
@@ -1611,7 +1704,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Vierge",
             "chanson_preferee": "Like a Prayer - Madonna",
-            "artiste_prefere": "Yayoi Kusama"
+            "artiste_prefere": "Yayoi Kusama",
+            "sexe": "Homme"
         },
         {
             "uuid": "6a2da7d4a2854a0da102131930648f9e",
@@ -1621,7 +1715,10 @@
             "poids": 85,
             "nationalite": "Français",
             "peau": "mate",
-            "langues": ["français", "espagnol"],
+            "langues": [
+                "français",
+                "espagnol"
+            ],
             "cheveux": "noirs",
             "metier": "ingénieur en informatique",
             "sport": "tennis",
@@ -1630,7 +1727,11 @@
             "animaux": false,
             "yeux": "marron",
             "dessert": "mousse au chocolat",
-            "qualites": ["Rationnel", "Curieux", "Calme"],
+            "qualites": [
+                "Rationnel",
+                "Curieux",
+                "Calme"
+            ],
             "defaut": "Procrastine parfois",
             "ville": "Toulouse",
             "match": null,
@@ -1638,7 +1739,8 @@
             "opinion_politique": "Centriste",
             "signe_astrologique": "Scorpion",
             "chanson_preferee": "Wonderwall - Oasis",
-            "artiste_prefere": "Johannes Vermeer"
+            "artiste_prefere": "Johannes Vermeer",
+            "sexe": "Homme"
         },
         {
             "uuid": "cb90c884161f4bc3a312ed271b477db2",
@@ -1648,7 +1750,10 @@
             "poids": 65,
             "nationalite": "Français",
             "peau": "blanche",
-            "langues": ["français", "anglais"],
+            "langues": [
+                "français",
+                "anglais"
+            ],
             "cheveux": "châtains",
             "metier": "étudiant en droit",
             "sport": "natation",
@@ -1657,7 +1762,11 @@
             "animaux": true,
             "yeux": "verts",
             "dessert": "crème brûlée",
-            "qualites": ["Sociable", "Ambitieux", "Attentionné"],
+            "qualites": [
+                "Sociable",
+                "Ambitieux",
+                "Attentionné"
+            ],
             "defaut": "Impatient",
             "ville": "Paris",
             "match": null,
@@ -1665,7 +1774,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Poissons",
             "chanson_preferee": "Another One Bites the Dust - Queen",
-            "artiste_prefere": "H.R. Giger"
+            "artiste_prefere": "H.R. Giger",
+            "sexe": "Homme"
         },
         {
             "uuid": "9db255e14c53441ea18e1cfc3d4be8c6",
@@ -1675,7 +1785,10 @@
             "poids": 95,
             "nationalite": "Français",
             "peau": "blanche",
-            "langues": ["français", "espagnol"],
+            "langues": [
+                "français",
+                "espagnol"
+            ],
             "cheveux": "bruns",
             "metier": "photographe",
             "sport": "cyclisme",
@@ -1684,7 +1797,11 @@
             "animaux": false,
             "yeux": "bleus",
             "dessert": "tiramisu",
-            "qualites": ["Créatif", "Indépendant", "Observateur"],
+            "qualites": [
+                "Créatif",
+                "Indépendant",
+                "Observateur"
+            ],
             "defaut": "Têtu",
             "ville": "Marseille",
             "match": null,
@@ -1692,7 +1809,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Gémeaux",
             "chanson_preferee": "Wish You Were Here - Pink Floyd",
-            "artiste_prefere": "Banksy"
+            "artiste_prefere": "Banksy",
+            "sexe": "Homme"
         },
         {
             "uuid": "c1a31b69e8fc4a83b2f1e6df86f4d80d",
@@ -1702,7 +1820,10 @@
             "poids": 70,
             "nationalite": "Français",
             "peau": "mate",
-            "langues": ["français", "arabe"],
+            "langues": [
+                "français",
+                "arabe"
+            ],
             "cheveux": "noirs",
             "metier": "chef cuisinier",
             "sport": "danse",
@@ -1711,7 +1832,11 @@
             "animaux": true,
             "yeux": "marron",
             "dessert": "baklava",
-            "qualites": ["Créatif", "Passionné", "Sociable"],
+            "qualites": [
+                "Créatif",
+                "Passionné",
+                "Sociable"
+            ],
             "defaut": "Impatient",
             "ville": "Marseille",
             "match": null,
@@ -1719,7 +1844,8 @@
             "opinion_politique": "Progressiste",
             "signe_astrologique": "Lion",
             "chanson_preferee": "Ya Rayah - Dahmane El Harrachi",
-            "artiste_prefere": "Oum Kalthoum"
+            "artiste_prefere": "Oum Kalthoum",
+            "sexe": "Homme"
         },
         {
             "uuid": "2d9945056b484ff1b9ab47b7d816ce70",
@@ -1729,7 +1855,9 @@
             "poids": 75,
             "nationalite": "Français",
             "peau": "blanche",
-            "langues": ["français"],
+            "langues": [
+                "français"
+            ],
             "cheveux": "châtains",
             "metier": "archéologue",
             "sport": "randonnée",
@@ -1738,7 +1866,11 @@
             "animaux": true,
             "yeux": "verts",
             "dessert": "pain perdu",
-            "qualites": ["Curieux", "Aventureux", "Patient"],
+            "qualites": [
+                "Curieux",
+                "Aventureux",
+                "Patient"
+            ],
             "defaut": "Trop rêveur",
             "ville": "Toulouse",
             "match": null,
@@ -1746,7 +1878,8 @@
             "opinion_politique": "Écologiste",
             "signe_astrologique": "Verseau",
             "chanson_preferee": "Kothbiro - Ayub Ogada",
-            "artiste_prefere": "Yann Tiersen"
+            "artiste_prefere": "Yann Tiersen",
+            "sexe": "Homme"
         },
         {
             "uuid": "6b931903349842f8a635a56e69b274a1",
@@ -1756,7 +1889,10 @@
             "poids": 80,
             "nationalite": "Français",
             "peau": "blanche",
-            "langues": ["français", "espagnol"],
+            "langues": [
+                "français",
+                "espagnol"
+            ],
             "cheveux": "blonds",
             "metier": "concepteur de jeux vidéo",
             "sport": "escrime",
@@ -1765,7 +1901,11 @@
             "animaux": false,
             "yeux": "bleus",
             "dessert": "churros",
-            "qualites": ["Créatif", "Analytique", "Sociable"],
+            "qualites": [
+                "Créatif",
+                "Analytique",
+                "Sociable"
+            ],
             "defaut": "Distrait",
             "ville": "Paris",
             "match": null,
@@ -1773,7 +1913,8 @@
             "opinion_politique": "Libéral",
             "signe_astrologique": "Balance",
             "chanson_preferee": "Strobe - Deadmau5",
-            "artiste_prefere": "Haywyre"
+            "artiste_prefere": "Haywyre",
+            "sexe": "Homme"
         },
         {
             "uuid": "c5f8f3093c2f4cf2a5ff6d69d4ef5db9",
@@ -1783,7 +1924,10 @@
             "poids": 72,
             "nationalite": "Français",
             "peau": "mate",
-            "langues": ["français", "arabe"],
+            "langues": [
+                "français",
+                "arabe"
+            ],
             "cheveux": "bruns",
             "metier": "designer de mode",
             "sport": "danse",
@@ -1792,7 +1936,11 @@
             "animaux": true,
             "yeux": "marron",
             "dessert": "crème caramel",
-            "qualites": ["Créatif", "Passionné", "Sociable"],
+            "qualites": [
+                "Créatif",
+                "Passionné",
+                "Sociable"
+            ],
             "defaut": "Perfectionniste",
             "ville": "Lyon",
             "match": null,
@@ -1800,7 +1948,8 @@
             "opinion_politique": "Progressiste",
             "signe_astrologique": "Cancer",
             "chanson_preferee": "Alors on danse - Stromae",
-            "artiste_prefere": "Amine Edge & DANCE"
+            "artiste_prefere": "Amine Edge & DANCE",
+            "sexe": "Homme"
         },
         {
             "uuid": "8a7772c7ce0d4e2fb4cf0d31b269b573",
@@ -1810,7 +1959,9 @@
             "poids": 90,
             "nationalite": "Français",
             "peau": "blanche",
-            "langues": ["français"],
+            "langues": [
+                "français"
+            ],
             "cheveux": "bruns",
             "metier": "architecte",
             "sport": "escalade",
@@ -1819,7 +1970,11 @@
             "animaux": false,
             "yeux": "verts",
             "dessert": "tiramisu",
-            "qualites": ["Créatif", "Pragmatique", "Persévérant"],
+            "qualites": [
+                "Créatif",
+                "Pragmatique",
+                "Persévérant"
+            ],
             "defaut": "Trop critique",
             "ville": "Bordeaux",
             "match": null,
@@ -1827,7 +1982,8 @@
             "opinion_politique": "Centriste",
             "signe_astrologique": "Capricorne",
             "chanson_preferee": "Breezeblocks - Alt-J",
-            "artiste_prefere": "Nujabes"
+            "artiste_prefere": "Nujabes",
+            "sexe": "Homme"
         },
         {
             "uuid": "d4b28ac65e544b8d9b897d98fc5a791a",
@@ -1837,7 +1993,9 @@
             "poids": 72,
             "nationalite": "Français",
             "peau": "noire",
-            "langues": ["français"],
+            "langues": [
+                "français"
+            ],
             "cheveux": "crépus",
             "metier": "artiste de rue",
             "sport": "parkour",
@@ -1846,13 +2004,20 @@
             "animaux": true,
             "yeux": "marron",
             "dessert": "gâteau à la patate douce",
-            "qualites": ["Créatif", "Aventurier", "Sociable"],
+            "qualites": [
+                "Créatif",
+                "Aventurier",
+                "Sociable"
+            ],
             "defaut": "Impatient",
+            "ville": null,
+            "match": null,
             "religion": "Athéisme",
             "opinion_politique": "Anarchiste",
             "signe_astrologique": "Verseau",
             "chanson_preferee": "La Pluie - OrelSan feat. Stromae",
-            "artiste_prefere": "Banksy"
+            "artiste_prefere": "Banksy",
+            "sexe": "Homme"
         },
         {
             "uuid": "4e33b9b7bda74bba88a63b8db72fc75f",
@@ -1862,7 +2027,10 @@
             "poids": 80,
             "nationalite": "Français",
             "peau": "noire",
-            "langues": ["français", "wolof"],
+            "langues": [
+                "français",
+                "wolof"
+            ],
             "cheveux": "locks",
             "metier": "ethnobotaniste",
             "sport": "escalade",
@@ -1871,13 +2039,20 @@
             "animaux": false,
             "yeux": "marron",
             "dessert": "mango sticky rice",
-            "qualites": ["Curieux", "Aventurier", "Empathique"],
+            "qualites": [
+                "Curieux",
+                "Aventurier",
+                "Empathique"
+            ],
             "defaut": "Indécis",
+            "ville": null,
+            "match": null,
             "religion": "Croyances traditionnelles africaines",
             "opinion_politique": "Écologiste",
             "signe_astrologique": "Scorpion",
             "chanson_preferee": "La Vie Est Belle - Lomepal",
-            "artiste_prefere": "Yan Pei-Ming"
+            "artiste_prefere": "Yan Pei-Ming",
+            "sexe": "Homme"
         },
         {
             "uuid": "806930883ef542f899ab05f862938f08",
@@ -1887,7 +2062,10 @@
             "poids": 78,
             "nationalite": "Français",
             "peau": "noire",
-            "langues": ["français", "anglais"],
+            "langues": [
+                "français",
+                "anglais"
+            ],
             "cheveux": "rasés",
             "metier": "chercheur en intelligence artificielle",
             "sport": "basket",
@@ -1896,13 +2074,20 @@
             "animaux": true,
             "yeux": "marron",
             "dessert": "tiramisu",
-            "qualites": ["Analytique", "Ambitieux", "Calme"],
+            "qualites": [
+                "Analytique",
+                "Ambitieux",
+                "Calme"
+            ],
             "defaut": "Tendance à l'isolement",
+            "ville": null,
+            "match": null,
             "religion": "Athéisme",
             "opinion_politique": "Centriste",
             "signe_astrologique": "Taureau",
             "chanson_preferee": "Dans Ma Ruche - Oxmo Puccino",
-            "artiste_prefere": "JR"
+            "artiste_prefere": "JR",
+            "sexe": "Homme"
         },
         {
             "uuid": "c4582f36c47e408bb5a09f96054262b6",
@@ -1912,7 +2097,10 @@
             "poids": 70,
             "nationalite": "Français",
             "peau": "noire",
-            "langues": ["français", "arabe"],
+            "langues": [
+                "français",
+                "arabe"
+            ],
             "cheveux": "crépus",
             "metier": "psychologue",
             "sport": "yoga",
@@ -1921,13 +2109,20 @@
             "animaux": false,
             "yeux": "marron",
             "dessert": "gateau à l'ananas",
-            "qualites": ["Empathique", "Sensible", "Réfléchi"],
+            "qualites": [
+                "Empathique",
+                "Sensible",
+                "Réfléchi"
+            ],
             "defaut": "Tendance à l'auto-critique",
+            "ville": null,
+            "match": null,
             "religion": "Islam",
             "opinion_politique": "Progressiste",
             "signe_astrologique": "Poissons",
             "chanson_preferee": "Respire - Mickey 3D",
-            "artiste_prefere": "Abdoulaye Konaté"
+            "artiste_prefere": "Abdoulaye Konaté",
+            "sexe": "Homme"
         },
         {
             "uuid": "18e3e0c4c7a748a8ad5e4825fc9cdbe2",
@@ -1937,7 +2132,9 @@
             "poids": 85,
             "nationalite": "Français",
             "peau": "noire",
-            "langues": ["français"],
+            "langues": [
+                "français"
+            ],
             "cheveux": "afro",
             "metier": "urbaniste",
             "sport": "danse contemporaine",
@@ -1946,13 +2143,20 @@
             "animaux": true,
             "yeux": "marron",
             "dessert": "crème brûlée",
-            "qualites": ["Créatif", "Engagé", "Sociable"],
+            "qualites": [
+                "Créatif",
+                "Engagé",
+                "Sociable"
+            ],
             "defaut": "Indécis",
+            "ville": null,
+            "match": null,
             "religion": "Athéisme",
             "opinion_politique": "Libéral",
             "signe_astrologique": "Gémeaux",
             "chanson_preferee": "Le Phare - Yann Tiersen",
-            "artiste_prefere": "Kehinde Wiley"
+            "artiste_prefere": "Kehinde Wiley",
+            "sexe": "Homme"
         },
         {
             "uuid": "1a2b3c4d5e6f7g8h9i",
@@ -1962,7 +2166,9 @@
             "poids": 5,
             "nationalite": "Félin",
             "peau": "pelage",
-            "langues": ["Miaulement"],
+            "langues": [
+                "Miaulement"
+            ],
             "cheveux": "poils",
             "metier": "Chasseur de souris professionnel",
             "sport": "Chasse à la balle",
@@ -1971,13 +2177,20 @@
             "animaux": true,
             "yeux": "verts",
             "dessert": "Lait",
-            "qualites": ["Agile", "Indépendant", "Adorable"],
+            "qualites": [
+                "Agile",
+                "Indépendant",
+                "Adorable"
+            ],
             "defaut": "Paresseux",
+            "ville": "Arbracha",
+            "match": null,
             "religion": "Culte du Soleil qui Réchauffe",
             "opinion_politique": "Anti-Chien",
             "signe_astrologique": "Félinus",
             "chanson_preferee": "Cat's in the Cradle - Harry Chapin",
-            "artiste_prefere": "Leonardo da Vinci (pour sa fascination pour les chats)"
+            "artiste_prefere": "Leonardo da Vinci (pour sa fascination pour les chats)",
+            "sexe": "Homme"
         }
     ]
 }

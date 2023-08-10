@@ -1,0 +1,123 @@
+    <!-- Quart Finale -->
+    <div class="section">
+        <h2 style="font-size: 2.5rem; color: #e74c3c; text-align: center; margin-bottom: 2rem;">
+            <span style="font-weight: bold; font-size: 2.8rem; color: #3498db;">Le Voyage</span>
+            <br>
+            <span style="font-size: 2.2rem; color: #27ae60;">du Cœur :</span>
+            <br>
+            <span style="font-size: 2rem; color: #e74c3c;">Huit Destins</span>
+            <span style="font-size: 2.2rem; color: #3498db;">Entrelacés</span>
+        </h2>
+        <h2>Quart de finale :</h2>
+        <div class="competition-description">
+            <!-- Contenu du premier tour -->
+            <div class="matchup">
+                <div class="matchup-names">
+                    {{ candidats[0].nom }} vs {{ candidats[1].nom }}
+                </div>
+                <div class="matchup-details">
+                    {{ candidats[0].nom }} entre sur scène avec assurance, prêt à séduire {{ request.session.get("username") }} par son charme et ses qualités athlétiques. {{ candidats[1].nom }}, quant à lui, semble un peu nerveux et en sueur. Au début de l'épreuve, {{ candidats[0].nom }} tente d'impressionner {{ request.session.get("username") }} avec ses mouvements de danse, mais il finit par trébucher sur ses propres pieds et tomber à plat. {{ candidats[1].nom }}, étonnamment, prend le relais et sauve la situation en chantant à {{ request.session.get("username") }} une chanson d'amour sincère. {{ request.session.get("username") }} est impressionnée par la vulnérabilité de {{ candidats[1].nom }} et le choisit comme vainqueur du premier tour.
+                </div>
+            </div>
+            
+            <!-- Espacement stylé -->
+            <div class="matchup-space"></div>
+            
+            <div class="matchup">
+                <div class="matchup-names">
+                    {{ candidats[2].nom }} vs {{ candidats[3].nom }}
+                </div>
+                <div class="matchup-details">
+                    {{ candidats[2].nom }} est un peu un joker, connu pour sa spontanéité et son esprit d'aventure. {{ candidats[3].nom }}, quant à lui, est plus réservé et poli. Dans le premier défi, les deux candidats doivent organiser un rendez-vous surprise pour {{ request.session.get("username") }}. {{ candidats[2].nom }} décide de l'emmener faire du saut à l'élastique, tandis que {{ candidats[3].nom }} opte pour un dîner plus traditionnel et un film. Malheureusement pour {{ candidats[2].nom }}, {{ request.session.get("username") }} a un vertige mortel et finit par faire une crise de panique en montant au sommet de la tour de saut à l'élastique. {{ candidats[3].nom }}, quant à lui, séduit {{ request.session.get("username") }} par ses manières impeccables et remporte la partie.
+                </div>
+            </div>
+            
+            <!-- Espacement stylé -->
+            <div class="matchup-space"></div>
+            
+            <div class="matchup">
+                <div class="matchup-names">
+                    {{ candidats[4].nom }} vs {{ candidats[5].nom }}
+                </div>
+                <div class="matchup-details">
+                    {{ candidats[4].nom }} est un homme d'affaires suave et sophistiqué, tandis qu'{{ candidats[5].nom }} est plutôt un homme charismatique. Lors de la première épreuve, les deux hommes doivent préparer un repas pour {{ request.session.get("username") }}. {{ candidats[4].nom }} décide d'y aller à fond et de préparer un plat français sophistiqué, tandis qu'{{ candidats[5].nom }} opte pour un simple plat de pâtes. Malheureusement pour {{ candidats[4].nom }}, il oublie d'allumer le four et finit par servir à {{ request.session.get("username") }} un blanc de poulet cru. {{ candidats[5].nom }}, quant à lui, séduit {{ request.session.get("username") }} par son côté terre-à-terre et remporte la manche.
+                </div>
+            </div>
+            
+            <!-- Espacement stylé -->
+            <div class="matchup-space"></div>
+            
+            <div class="matchup">
+                <div class="matchup-names">
+                    {{ candidats[6].nom }} vs {{ candidats[7].nom }}
+                </div>
+                <div class="matchup-details">
+                    {{ candidats[6].nom }} est un gentleman distingué, connu pour sa générosité et sa sophistication. {{ candidats[7].nom }}, quant à lui, est un peu rebelle, avec un style hipster et de nombreux tatouages. Le premier défi consiste à écrire un poème d'amour pour {{ request.session.get("username") }}. {{ candidats[6].nom }} écrit un magnifique sonnet, tandis que {{ candidats[7].nom }} opte pour une approche moins conventionnelle en écrivant une chanson de rap. Malheureusement pour lui, il oublie les paroles à mi-parcours et finit par improviser des rimes embarrassantes. {{ candidats[6].nom }}, quant à lui, séduit {{ request.session.get("username") }} avec ses mots éloquents et remporte la manche.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!-- Demi Finale -->
+     <div class="section">
+        <h2>Demi Finale :</h2>
+        <div class="competition-description">
+            <!-- Contenu du deuxième tour -->
+            <div class="matchup">
+                <div class="matchup-names">{{ candidats[5].nom }} vs {{ candidats[6].nom }}</div>
+                <div class="matchup-details">
+                    Dans ce tour, {{ candidats[5].nom }} affronte la tête de série la plus élevée, qui se trouve être {{ candidats[6].nom }}. Le défi de ce tour est d'organiser un premier rendez-vous parfait après la demande en mariage. {{ candidats[5].nom }}, l'homme à femmes, emmène {{ request.session.get("username") }} dans une boîte de nuit branchée où ils dansent jusqu'au bout de la nuit. {{ candidats[6].nom }}, le gentleman romantique, emmène {{ request.session.get("username") }} en calèche à travers la ville, où ils s'arrêtent pour un pique-nique romantique sous les étoiles. En fin de compte, {{ request.session.get("username") }} est très impressionnée par le geste attentionné et romantique de {{ candidats[6].nom }}, et elle le choisit comme son véritable amour.
+                </div>
+            </div>
+            <div class="matchup-space"></div>
+
+            <div class="matchup">
+                <div class="matchup-names">{{ candidats[1].nom }} vs {{ candidats[3].nom }}</div>
+                <div class="matchup-details">
+                    Dans ce tour, {{ candidats[3].nom }}, le gentleman romantique, s'oppose à {{ candidats[1].nom }}, le charmeur sophistiqué. Le défi de cette manche est de préparer la demande en mariage parfaite pour {{ request.session.get("username") }}. {{ candidats[3].nom }} sort le grand jeu et surprend {{ request.session.get("username") }} avec un dîner aux chandelles sur un toit-terrasse, accompagné d'un groupe jouant sa chanson préférée. {{ candidats[1].nom }}, en bon gentleman, emmène {{ request.session.get("username") }} dans une gondole romantique à travers les canaux de Venise, où il la demande en mariage avec une magnifique bague en diamant. A la fin, {{ request.session.get("username") }} est déchirée entre les deux, mais choisit finalement {{ candidats[1].nom }} comme son véritable amour.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Finale -->
+    <div class="section">
+        <h2>Finale :</h2>
+        <div class="competition-description">
+            <!-- Contenu de la finale -->
+            <div class="matchup">
+                <div class="matchup-names">{{ candidats[1].nom }} vs {{ candidats[6].nom }}</div>
+                <div class="matchup-details">
+                    Dans l'épreuve finale, {{ candidats[6].nom }} et {{ candidats[1].nom }} s'affrontent pour le cœur de {{ request.session.get("username") }}. Le défi de cette manche est de planifier une lune de miel parfaite. {{ candidats[6].nom }}, le charmeur sophistiqué, emmène {{ request.session.get("username") }} sur une luxueuse croisière en Méditerranée, où ils sirotent du champagne sur le pont et regardent le coucher de soleil sur l'océan. {{ candidats[1].nom }}, le gentleman romantique, emmène {{ request.session.get("username") }} dans une villa privée dans la campagne italienne, où ils passent leurs journées à explorer les vignobles et leurs nuits blottis au coin du feu. A la fin, {{ request.session.get("username") }} est déchirée entre les deux, mais choisit finalement {{ candidats[1].nom }} comme son véritable amour.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- La vie d'après -->
+    <div class="section">
+        <h2>La vie d’après :</h2>
+        <div class="competition-description life-after">
+            <div class="life-after-title">
+                C'est ainsi que {{ request.session.get("username") }} est tombée amoureuse de {{ candidats[1].nom }},<br>le gentleman romantique qui l'a charmée par ses gestes attentionnés et romantiques.
+            </div>
+            <div class="life-after-text">
+                Après la demande en mariage romantique et la lune de miel de {{ request.session.get("username") }} et {{ candidats[1].nom }}, ils se sont installés dans la vie de couple et ont connu les hauts et les bas habituels de toute relation à long terme. Au cours des 50 années qui ont suivi, ils ont connu leur lot de contretemps, mais aussi de nombreux moments heureux.
+                <br><br>
+                L'un des plus grands défis s'est présenté au début de leur mariage lorsque {{ candidats[1].nom }} s'est vu offrir un emploi dans un autre pays et que {{ request.session.get("username") }} a dû décider de partir avec lui ou de rester à l'étranger. Après de nombreuses discussions et réflexions, ils ont décidé de franchir le pas et de s'installer ensemble. Cependant, la transition n'a pas été facile et ils ont dû faire face au mal du pays et aux différences culturelles.
+                <br><br>
+                Un autre incident mémorable s'est produit lorsque {{ request.session.get("username") }} s'est accidentellement teint les cheveux en rose vif à l'occasion d'un événement caritatif, mais la couleur s'est avérée permanente. Elle a dû faire face à des regards et des commentaires étranges pendant un certain temps, mais {{ candidats[1].nom }} l'a soutenue et s'est même teint les cheveux en rose pour montrer son soutien.
+                <br><br>
+                À la fin de leur vie, ils ont dû faire face à des problèmes de santé et à des difficultés financières, mais ils ont aussi vécu de nombreux moments heureux ensemble, notamment en voyageant, en passant du temps avec leur famille et leurs amis, et en s'adonnant à leurs passions.
+                <br><br>
+                L'une de leurs aventures les plus folles s'est produite lorsqu'ils ont décidé de faire un voyage spontané à travers le pays dans un vieux véhicule récréatif. En chemin, ils se sont perdus, leurs pneus ont éclaté et ils ont même accidentellement percuté un stand de fruits. Mais ils ont aussi rencontré des gens intéressants, vu des paysages magnifiques et créé des souvenirs qu'ils n'oublieront jamais.
+                <br><br>
+                En fin de compte, après 50 ans de mariage, {{ candidats[1].nom }} et {{ request.session.get("username") }} ont regardé leur voyage avec amour et gratitude, sachant qu'ils avaient relevé leurs défis et célébré leurs triomphes ensemble. Ils étaient heureux d'être ensemble et leur amour n'avait fait que se renforcer au fil des ans.
+            </div>
+            <div class="hearts">
+                <div class="heart-icon bottom-left-heart">❤️</div>
+                <div class="heart-icon middle-heart">❤️</div>
+                <div class="heart-icon bottom-right-heart">❤️</div>
+            </div>
+        </div>
+    </div>

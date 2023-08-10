@@ -1,6 +1,8 @@
 import json
 import random
 import requests
+import os
+import re
 from fastapi import Request, status, APIRouter, Form
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import RedirectResponse
@@ -50,6 +52,19 @@ def start(request_data: StartRequest, request: Request):
     return RedirectResponse(url="/profils", status_code=302)
 
 
+def get_story_files():
+    story_files = []
+    for filename in os.listdir("templates"):
+        if re.match(r'^story\d+\.html$', filename):
+            story_files.append(filename)
+    return story_files
+
+def get_story_content(filename: str) -> str:
+    story_path = os.path.join("templates", filename)
+    with open(story_path, "r", encoding="utf-8") as file:
+        return file.read()
+
+
 @router.get("/profils")
 def profils(request: Request):
 
@@ -61,9 +76,16 @@ def profils(request: Request):
   else:
 
     username = request.session.get("username")
-    print(username) 
+    story_files = get_story_files()
+    chosen_file = random.choice(story_files)
+    story_content = get_story_content(chosen_file)
 
-    return templates.TemplateResponse("story.html", {"request": request, "candidats": profile, "username": username})
+    print(story_content)
+
+    # Render the story content with dynamic values
+    rendered_story_content = templates.env.from_string(story_content).render(candidats=profile, username=username, request=request)
+
+    return templates.TemplateResponse("story.html", {"request": request, "candidats": profile, "username": username, "story_content": rendered_story_content})
 
 @router.get("/profiles")
 def get_profiles():

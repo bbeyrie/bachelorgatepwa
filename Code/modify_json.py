@@ -2,12 +2,11 @@ import pandas as pd
 import json
 
 
-df = pd.read_json(r".\bachelorgatepwa\data\profils.json")
+df = pd.read_json(r".\data\profils.json")
 
 df = pd.concat([df.drop(['profils'], axis=1), df['profils'].apply(pd.Series)], axis=1)
 
-df = df.drop(columns=['nomatch'])
-df['match'] = None
+df['sexe'] = "Homme"
 
 
 a = df.to_dict(orient='records')

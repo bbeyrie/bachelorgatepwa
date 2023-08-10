@@ -1,0 +1,124 @@
+Bonjour, imagine 8 hommes séduisant fictifs, je ne veux pas de détail juste des actions, qui doivent séduire une femme nommé Camille. Cela va se passer d'abord en quart de finale, puis demi-finale, puis finale et enfin la vie d'après avec Camille.  ils vont s'affronter 1 vs 1 (homme vs homme) en essayant de séduire au mieux la belle, je te laisse voir comment, et à la fin de chaque match, Camille choisi lequel lui a le plus plu.
+
+Propose moi une histoire avec ces 8 profils, la vie d'après doit être un poil long.
+
+
+
+C'est pas mal, reprenons depuis le début, mais raconte cette fois-ci un peu plus de détails sur "La vie d'après" ? et aussi, j'aimerais que tu remplaces "Camille" par "{{ request.session.get("username") }}" et les 8 candidats par "{{ candidats[0].nom }}", "{{ candidats[1].nom }}" ... "{{ candidats[7].nom }}".
+
+
+C'est très bien, maintenant tu vois le HTML suivant ? Je veux que tu effaces le contenu et que tu remplaces par l'histoire que tu viens de faire.
+Je ne veux que le <body> et renvoie le moi en entier, partie par partie, match par match, et enfin "la vie d'après", je veux tout le texte d'affiché.
+
+    <!-- Quart Finale -->
+    <div class="section">
+        <h2>Quart de finale :</h2>
+        <div class="competition-description">
+            <!-- Contenu du premier tour -->
+            <div class="matchup">
+                <div class="matchup-names">
+                    {{ candidats[0].nom }} vs {{ candidats[1].nom }}
+                </div>
+                <div class="matchup-details">
+                    Quart de finale 1
+                </div>
+            </div>
+            
+            <!-- Espacement stylé -->
+            <div class="matchup-space"></div>
+            
+            <div class="matchup">
+                <div class="matchup-names">
+                    {{ candidats[2].nom }} vs {{ candidats[3].nom }}
+                </div>
+                <div class="matchup-details">
+                    Quart de finale 2
+                </div>
+            </div>
+            
+            <!-- Espacement stylé -->
+            <div class="matchup-space"></div>
+            
+            <div class="matchup">
+                <div class="matchup-names">
+                    {{ candidats[4].nom }} vs {{ candidats[5].nom }}
+                </div>
+                <div class="matchup-details">
+                    Quart de finale 3
+                </div>
+            </div>
+            
+            <!-- Espacement stylé -->
+            <div class="matchup-space"></div>
+            
+            <div class="matchup">
+                <div class="matchup-names">
+                    {{ candidats[6].nom }} vs {{ candidats[7].nom }}
+                </div>
+                <div class="matchup-details">
+                    Quart de finale 4
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!-- Demi Finale -->
+     <div class="section">
+        <h2>Demi Finale :</h2>
+        <div class="competition-description">
+            <!-- Contenu du deuxième tour -->
+            <div class="matchup">
+                <div class="matchup-names">{{ candidats[5].nom }} vs {{ candidats[6].nom }}</div>
+                <div class="matchup-details">
+                    Demi finale 1
+                </div>
+            </div>
+            <div class="matchup-space"></div>
+
+            <div class="matchup">
+                <div class="matchup-names">{{ candidats[1].nom }} vs {{ candidats[3].nom }}</div>
+                <div class="matchup-details">
+                    Demi finale 2
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Finale -->
+    <div class="section">
+        <h2>Finale :</h2>
+        <div class="competition-description">
+            <!-- Contenu de la finale -->
+            <div class="matchup">
+                <div class="matchup-names">{{ candidats[1].nom }} vs {{ candidats[6].nom }}</div>
+                <div class="matchup-details">
+                    Finale 1
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- La vie d'après -->
+    <div class="section">
+        <h2>La vie d’après :</h2>
+        <div class="competition-description life-after">
+            <div class="life-after-title">
+                Titre de la vie d'après
+            </div>
+            <div class="life-after-text">
+                paragraphe 1
+                <br><br>
+                paragraphe 2
+                <br><br>
+                paragraphe 3
+                <br><br>
+                paragraphe 4
+                ....
+            </div>
+            <div class="hearts">
+                <div class="heart-icon bottom-left-heart">❤️</div>
+                <div class="heart-icon middle-heart">❤️</div>
+                <div class="heart-icon bottom-right-heart">❤️</div>
+            </div>
+        </div>
+    </div>
