@@ -79,9 +79,7 @@ def profils(request: Request):
     story_files = get_story_files()
     chosen_file = random.choice(story_files)
     story_content = get_story_content(chosen_file)
-
-    print(story_content)
-
+    
     # Render the story content with dynamic values
     rendered_story_content = templates.env.from_string(story_content).render(candidats=profile, username=username, request=request)
 
