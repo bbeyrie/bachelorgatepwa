@@ -54,13 +54,13 @@ def start(request_data: StartRequest, request: Request):
 
 def get_story_files():
     story_files = []
-    for filename in os.listdir("templates"):
+    for filename in os.listdir("templates/stories"):
         if re.match(r'^story\d+\.html$', filename):
             story_files.append(filename)
     return story_files
 
 def get_story_content(filename: str) -> str:
-    story_path = os.path.join("templates", filename)
+    story_path = os.path.join("templates/stories", filename)
     with open(story_path, "r", encoding="utf-8") as file:
         return file.read()
 
